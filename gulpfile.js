@@ -12,19 +12,22 @@ var path = {
         html: 'dist/',
         js: 'dist/js/',
         css: 'dist/css/',
-        img: 'dist/img/'
+        img: 'dist/img/',
+        fonts: 'dist/fonts/'
     },
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
         style: 'src/css/main.scss',
-        img: 'src/img/**/*.*'
+        img: 'src/img/**/*.*',
+        fonts: 'src/fonts/**/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/css/**/*.scss',
-        img: 'src/img/**/*.*'
+        img: 'src/img/**/*.*',
+        fonts: 'src/fonts/**/*.*'
     },
     clean: './dist'
 };
@@ -78,10 +81,16 @@ gulp.task('image', function () {
         .pipe(plugins.browserSync.reload({stream: true}));
 });
 
+gulp.task('fonts', function() {
+    gulp.src(path.src.fonts)
+        .pipe(gulp.dest(path.build.fonts))
+});
+
 gulp.task('build', [
     'html',
     'js',
     'css',
+    'fonts',
     'image'
 ]);
 
@@ -97,6 +106,9 @@ gulp.task('watch', function(){
     });
     plugins.watch([path.watch.img], function(event, cb) {
         gulp.start('image');
+    });
+    plugins.watch([path.watch.fonts], function(event, cb) {
+        gulp.start('fonts');
     });
 });
 

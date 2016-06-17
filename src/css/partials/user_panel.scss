@@ -1,0 +1,25 @@
+#user_panel {
+    background-color: #6db8f1;
+    font-size: 14px;
+
+    .user_panel_link {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #7cbff2;
+            text-decoration: none;
+        }
+
+        .profile_img {
+            margin-right: 10px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+    }
+}

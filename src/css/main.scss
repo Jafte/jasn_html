@@ -2,10 +2,16 @@
 * Third Party
 */
 @import "../../bower_components/normalize-css/normalize.css";
-
-
+@import "../../bower_components/uikit/scss/uikit-mixins.scss";
 
 /*
 * Custom
 */
 @import "partials/variable";
+@import "partials/user_panel";
+
+/*
+* uikit
+*/
+@import "../../bower_components/uikit/scss/uikit.scss";
+@import "../../bower_components/uikit/scss/components/autocomplete.scss";
