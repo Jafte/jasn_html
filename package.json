@@ -1,0 +1,21 @@
+{
+  "name": "jasn",
+  "version": "1.0.0",
+  "description": "Just Another Site Name",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jafte/jasn_html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jafte/jasn_html/issues"
+  },
+  "homepage": "https://github.com/Jafte/jasn_html#readme"
+}
