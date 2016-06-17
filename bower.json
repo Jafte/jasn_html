@@ -1,0 +1,7 @@
+{
+  "name": "jasn",
+  "dependencies": {
+    "uikit": "^2.26.3",
+    "normalize-css": "normalize.css#^4.1.1"
+  }
+}
