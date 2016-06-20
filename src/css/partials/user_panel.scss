@@ -2,24 +2,42 @@
     background-color: #6db8f1;
     font-size: 14px;
 
+    a {
+        color: #fff;
+        &.user_panel_link {
+            text-decoration: none;
+            &:hover {
+                background-color: #7cbff2;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .user_panel_wrapper {
+        margin-left: -$utility-container-padding-horizontal;
+        margin-right: -$utility-container-padding-horizontal;
+    }
     .user_panel_link {
         display: block;
-        padding: 10px 0;
         width: 100%;
+        height: 100%;
         text-align: center;
         color: #fff;
-        text-decoration: none;
 
-        &:hover {
-            background-color: #7cbff2;
-            text-decoration: none;
+        &.user_panel_link_profile {
+            overflow: hidden;
+            @media (min-width: $breakpoint-medium) {
+                text-align: left;
+            }
+
+            .profile_img {
+                margin-right: 10px;
+                background-color: #fff;
+                text-align: center;
+            }
         }
-
-        .profile_img {
-            margin-right: 10px;
-            background-color: #fff;
-            text-align: center;
+        .user_panel_link_profile_inner {
+            padding: 10px;
         }
-
     }
 }
