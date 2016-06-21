@@ -13,11 +13,6 @@
         }
     }
 
-    .main_menu_wrapper {
-        margin-left: -$utility-container-padding-horizontal;
-        margin-right: -$utility-container-padding-horizontal;
-    }
-
     .logo {
         text-align: center;
         @media (min-width: $breakpoint-medium) {
@@ -32,8 +27,12 @@
         width: 100%;
         text-align: center;
         font-size:16px;
-        .main_menu_link_inner {
-            padding: 10px;
+        &:after {
+            content: '';
+            display:inline-block;
+            vertical-align:middle;
+            height:100%;
+            width:0px;
         }
     }
 

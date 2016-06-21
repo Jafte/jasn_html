@@ -1,0 +1,6 @@
+.uk-container {
+  > .container_no_padding_horizontal {
+    margin-left: -$utility-container-padding-horizontal;
+    margin-right: -$utility-container-padding-horizontal;
+  }
+}
