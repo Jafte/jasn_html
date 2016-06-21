@@ -3,17 +3,28 @@
 */
 @import "../../bower_components/normalize-css/normalize.css";
 @import "../../bower_components/uikit/scss/uikit-mixins.scss";
+
+/*
+* local variable
+*/
+@import "partials/variable";
+
+/*
+* uikit
+*/
 @import "../../bower_components/uikit/scss/uikit.scss";
 
 /*
 * Custom
 */
-@import "partials/variable";
+
 @import "partials/utils";
 @import "partials/user_panel";
 @import "partials/main_menu";
+@import "partials/footer";
+@import "partials/header";
 
 /*
-* uikit
+* uikit components
 */
-@import "../../bower_components/uikit/scss/components/autocomplete.scss";
+// @import "../../bower_components/uikit/scss/components/autocomplete.scss";

@@ -1,0 +1,16 @@
+#menu_footer {
+    position:relative;
+    margin-bottom: 40px;
+    background-color: #dce1ea;
+    -moz-box-shadow:    inset  0  8px 8px -8px #666,
+                        inset  0 -8px 8px -8px #666;
+    -webkit-box-shadow: inset  0  8px 8px -8px #666,
+                        inset  0 -8px 8px -8px #666;
+    box-shadow:         inset  0  8px 8px -8px #666,
+                        inset  0 -8px 8px -8px #666;
+
+    #menu_footer_content {
+        padding: 20px 0;
+
+    }
+}
