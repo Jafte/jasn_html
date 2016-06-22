@@ -1,0 +1,28 @@
+.article_list {
+    .uk-article {
+        .author {
+            img {
+                margin-right: 10px;
+            }
+        }
+        .interactive {
+            margin-top: 30px;
+            .comments_coount {
+                color: #596273;
+                i {
+                    margin-right: 8px;
+                }
+            }
+            .like_and_share {
+                color: #79aef2;
+                .like {
+                    margin-right: 20px;
+                    margin-top: -5px;
+                }
+                .share {
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+}
